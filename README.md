@@ -15,21 +15,21 @@
 ## Conversion Specifiers
   The conversion specifier, introduced by the character %, is a character that specifies the type of conversion to be applied. These are the ones we used:
 - d, i
-  The `int` argument is covered to signed decimal notation.
+* The `int` argument is covered to signed decimal notation.
 - b
-  The `unsigned int` argument is converted decimal notation.
+* The `unsigned int` argument is converted decimal notation.
 - o, u, x, X
-  The `unsigned int` argument is converted to unsigned octal (`o`), unsigned decimal (`u`), or unsigned hexadecimal (`x` and `X`). The letters `abcdef` are used for `x` conversions and the letters `ABCDEF` are used for `X` conversions.
+* The `unsigned int` argument is converted to unsigned octal (`o`), unsigned decimal (`u`), or unsigned hexadecimal (`x` and `X`). The letters `abcdef` are used for `x` conversions and the letters `ABCDEF` are used for `X` conversions.
 - c
-  The `int` argument is converted to an `unsigned char`.
+* The `int` argument is converted to an `unsigned char`.
 - s
-  The `const char *` argument is expected to be a pointer to a character array (aka. pointer to a string). Characters from the array are written starting from the first element of the array and ending at, but not including, the terminating null byte (`\0`).
+* The `const char *` argument is expected to be a pointer to a character array (aka. pointer to a string). Characters from the array are written starting from the first element of the array and ending at, but not including, the terminating null byte (`\0`).
 - r
-  Identical to the `s` conversion specifier, except each character of the array is converted to its corresponding character in ROT13 before being written.
+* Identical to the `s` conversion specifier, except each character of the array is converted to its corresponding character in ROT13 before being written.
 - p
-  The address of the argument is written. The address is written in hexadecimal with a leading `0x`.
+* The address of the argument is written. The address is written in hexadecimal with a leading `0x`.
 - %
-  A `%` is written. No argument is converted. The complete conversion specification is %%.
+* A `%` is written. No argument is converted. The complete conversion specification is %%.
 
 ## Example
   To print the address of Google LLC in the format "1600 Amphitheatre Parkway, Mountain View, California, U.S." where _street_, _city_, _state_ and _country_ are pointers to strings:
