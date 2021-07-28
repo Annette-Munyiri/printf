@@ -38,7 +38,7 @@ int print_number(va_list args)
 }
 
 /**
- * print_unsgined_number - Prints an unsigned number
+ * print_unsigned_number - Prints an unsigned number
  * @n: unsigned integer to be printed
  * Return: The amount of numbers printed
  */
@@ -52,8 +52,9 @@ int print_unsigned_number(unsigned int n)
 	len = 0;
 
 	num = n;
+
 	for (; num / div > 9; )
-		 div *= 10;
+		div *= 10;
 
 	for (; div != 0; )
 	{
@@ -61,6 +62,6 @@ int print_unsigned_number(unsigned int n)
 		num %= div;
 		div /= 10;
 	}
-	
+
 	return (len);
 }
